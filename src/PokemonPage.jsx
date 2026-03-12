@@ -1,3 +1,4 @@
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import LoadingSpinner from "./LoadingSpinner";
 import { useApi } from "./useApi";
@@ -33,7 +34,6 @@ const PokemonPage = ({ previous, next }) => {
         (ability) => ability.is_hidden === true,
     );
 
-    console.log("hiddenAbility=", hiddenAbility);
     return (
         <>
             <div className="links">
